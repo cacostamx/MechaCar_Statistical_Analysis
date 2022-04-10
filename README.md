@@ -19,7 +19,7 @@ The dataset contains 50 data points with 6 variables:
 
 From the data provided we established the following multiple linear model to establish the relation of design metrics to MPG.
 
-$MPG = \a_0 vehicle_lenght + \a_1 vehicle_weight + \a_2 spoiler_angle + \a_3 ground_clearance + \a_4 AWD + \beta $
+<img src="https://render.githubusercontent.com/render/math?math=MPG = \a_0 vehicle_lenght + \a_1 vehicle_weight + \a_2 spoiler_angle + \a_3 ground_clearance + \a_4 AWD + \beta">
 
 **Results.**
 
