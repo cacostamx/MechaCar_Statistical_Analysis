@@ -78,9 +78,13 @@ Calculate t-tests to test if mean PSI is equal to 1,500, with a significance lev
 
 2. When running the t-test for each lot against the mean of 1,500 PSI, we found that for Lot1 (p-value = 1 > 0.05) and Lot2 (p-value = 0.6027 > 0.05) we cannot reject the null hypotesis, thus their means could be considered statistically equal to 1,500.  However, for Lot3 (p-value = 0.04168 < 0.05) we reject the null hypotesis, thus concluiding that its mean is statistically different from 1,500 PSI.
 
-|t-test Lot1                               |t-test Lot2                               |
-|------------------------------------------|------------------------------------------|
-|![t-test Lot1](/Resources/t-test_lot1.png)|![t-test Lot2](/Resources/t-test_lot2.png)|
+|t-test Lot1                               |
+|------------------------------------------|
+|![t-test Lot1](/Resources/t-test_lot1.png)|
+
+|t-test Lot2                               |
+|------------------------------------------|
+|![t-test Lot2](/Resources/t-test_lot2.png)|
 
 |t-test Lot3                               |
 |------------------------------------------|
