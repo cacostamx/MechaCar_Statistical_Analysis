@@ -19,7 +19,7 @@ The dataset contains 50 data points with 6 variables:
 
 From the data provided we established the following multiple linear model to establish the relation of design metrics to MPG.
 
-<img src="https://render.githubusercontent.com/render/math?math=MPG = \a_0 vehicle_lenght + \a_1 vehicle_weight + \a_2 spoiler_angle + \a_3 ground_clearance + \a_4 AWD + \beta">
+<img src="https://render.githubusercontent.com/render/math?math=MPG = \a_0 vehicle_lenght \+ \a_1 vehicle\_weight \+ \a_2 spoiler\_angle \+ \a_3 ground\_clearance \+ \a_4 AWD \+ \beta" style="background-color:white;padding:20px;">
 
 **Results.**
 
@@ -45,9 +45,13 @@ Calculate the main statistics for the suspension coils PSI.
 
 **Results.**
 
-|Total stats summary                                 |Per lot stats summary                           |
-|----------------------------------------------------|------------------------------------------------|
-|![Total Stats Summary](/Resources/total_summary.png)|![Lot Stats Summary](/Resources/lot_summary.png)|
+|Total stats summary                                 |
+|----------------------------------------------------|
+|![Total Stats Summary](/Resources/total_summary.png)|
+
+||Per lot stats summary                          |
+|------------------------------------------------|
+|![Lot Stats Summary](/Resources/lot_summary.png)|
 
 As we can observe, the total statistics summary show that the overall PSI variance is <100. However, when looking at individual lot variances, Lot3 presents a variance of 170 which is way to high.
 
@@ -73,9 +77,13 @@ Calculate t-tests to test if mean PSI is equal to 1,500, with a significance lev
 
 2. When running the t-test for each lot against the mean of 1,500 PSI, we found that for Lot1 (p-value = 1 > 0.05) and Lot2 (p-value = 0.6027 > 0.05) we cannot reject the null hypotesis, thus their means could be considered statistically equal to 1,500.  However, for Lot3 (p-value = 0.04168 < 0.05) we reject the null hypotesis, thus concluiding that its mean is statistically different from 1,500 PSI.
 
-|t-test Lot1                               |t-test Lot2                               |t-test Lot3                               |
-|------------------------------------------|------------------------------------------|------------------------------------------|
-|![t-test Lot1](/Resources/t-test_lot1.png)|![t-test Lot2](/Resources/t-test_lot2.png)|![t-test Lot3](/Resources/t-test_lot3.png)|
+|t-test Lot1                               |t-test Lot2                               |
+|------------------------------------------|------------------------------------------|
+|![t-test Lot1](/Resources/t-test_lot1.png)|![t-test Lot2](/Resources/t-test_lot2.png)|
+
+|t-test Lot3                               |
+|------------------------------------------|
+|![t-test Lot3](/Resources/t-test_lot3.png)|
 
 Furthermore, the following boxplot shows the boxplot for each lot.  It is evident that in each lot the variance is increasing and the more outliers show, thus incrementing the difference to the reference value.
 
@@ -103,7 +111,7 @@ Alternate Hypotesis:  Purchase price for each model of MechaCar is not fairly pr
 
 It would be necessary to make a multiple linear regresion of purchase price against all the factors described in the form of:
 
-$Selling Price = \a_0 MPG + \a_1 Safety_Rating + \a_2 Maintenance_cost + \beta $
+<img src="https://render.githubusercontent.com/render/math?math=Selling Price = \a_0 MPG \+ \a_1 SafetyRating \+ \a_2 MaintenanceCost \+ \beta" style="background-color:white;padding:20px;">
 
 We'll have to analyze correlations and distributions to address any transformation needed and to validate if each factor contributes to the model or has to be eliminated or replaced.
 
