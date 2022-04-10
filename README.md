@@ -19,13 +19,17 @@ The dataset contains 50 data points with 6 variables:
 
 From the data provided we established the following multiple linear model to establish the relation of design metrics to MPG.
 
-<img src="https://render.githubusercontent.com/render/math?math=MPG = \a_0 vehicle_lenght \+ \a_1 vehicle\_weight \+ \a_2 spoiler\_angle \+ \a_3 ground\_clearance \+ \a_4 AWD \+ \beta" style="background-color:white;padding:20px;">
+![Formula 1](/Resources/formula1.png)
 
 **Results.**
 
-|Regressiion summary                                    |Correlation matrix                                |
-|-------------------------------------------------------|--------------------------------------------------|
-|![Summary regression table](/Resources/regression1.png)|![Correlation matrix](/Resources/correlation1.png)|
+|Regressiion summary                                    |
+|-------------------------------------------------------|
+|![Summary regression table](/Resources/regression1.png)|
+
+|Correlation matrix                                |
+|--------------------------------------------------|
+|![Correlation matrix](/Resources/correlation1.png)|
 
 1. It can be seen that p-values for vehicle_length and ground_clearance are low (<0.05), meaning that these slope values are different from zero, thus providing meaningful information to the model.  Vehicle_weight's p-value is a little over at 0.0776, whereas AWD and spoiler_clearance seem not to be a good fit for the model.
 
@@ -45,13 +49,10 @@ Calculate the main statistics for the suspension coils PSI.
 
 **Results.**
 
-|Total stats summary                                 |
-|----------------------------------------------------|
-|![Total Stats Summary](/Resources/total_summary.png)|
+|Total stats summary                                 |Per lot stats summary                           |
+|----------------------------------------------------|------------------------------------------------|
+|![Total Stats Summary](/Resources/total_summary.png)|![Lot Stats Summary](/Resources/lot_summary.png)|
 
-||Per lot stats summary                          |
-|------------------------------------------------|
-|![Lot Stats Summary](/Resources/lot_summary.png)|
 
 As we can observe, the total statistics summary show that the overall PSI variance is <100. However, when looking at individual lot variances, Lot3 presents a variance of 170 which is way to high.
 
@@ -111,7 +112,7 @@ Alternate Hypotesis:  Purchase price for each model of MechaCar is not fairly pr
 
 It would be necessary to make a multiple linear regresion of purchase price against all the factors described in the form of:
 
-<img src="https://render.githubusercontent.com/render/math?math=Selling Price = \a_0 MPG \+ \a_1 SafetyRating \+ \a_2 MaintenanceCost \+ \beta" style="background-color:white;padding:20px;">
+![Formula 2](/Resources/formula2.png)
 
 We'll have to analyze correlations and distributions to address any transformation needed and to validate if each factor contributes to the model or has to be eliminated or replaced.
 
